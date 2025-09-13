@@ -21,7 +21,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? [process.env.FRONTEND_URL, 'https://crypto-portfolio-frontend.onrender.com']
+    ? [process.env.FRONTEND_URL, 'https://crypto-portfolio-frontend-52gk.onrender.com']
     : ['http://localhost:5173', 'http://localhost:3000'],
   credentials: true
 }));

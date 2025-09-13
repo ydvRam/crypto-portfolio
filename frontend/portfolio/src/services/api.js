@@ -3,7 +3,7 @@ import axios from 'axios';
 // Create axios instance
 const api = axios.create({
   baseURL: process.env.NODE_ENV === 'production' 
-    ? process.env.REACT_APP_API_URL || 'https://crypto-portfolio-backend.onrender.com/api'
+    ? process.env.REACT_APP_API_URL || 'https://portfolio-1md9.onrender.com/api'
     : 'http://localhost:8001/api',
   timeout: 10000,
   headers: {
